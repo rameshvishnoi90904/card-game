@@ -10,7 +10,7 @@ function LaunchScreen({navigation}) {
       </Text>
       <Pressable
         style={styles.buttonContainer}
-        onPress={() => navigation.navigate('Game')}>
+        onPress={() => navigation.navigate('GameScreen')}>
         <Text style={styles.buttonText}>Start Game</Text>
       </Pressable>
     </SafeAreaView>
