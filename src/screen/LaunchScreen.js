@@ -1,16 +1,14 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  Pressable,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, Pressable} from 'react-native';
 
 function LaunchScreen({navigation}) {
   return (
-    <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{fontSize: 28, fontWeight: 'bold'}}>Welcome to Card Game</Text>
-      <Pressable 
+    <SafeAreaView
+      style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text style={{fontSize: 28, fontWeight: 'bold'}}>
+        Welcome to Card Game
+      </Text>
+      <Pressable
         style={styles.buttonContainer}
         onPress={() => navigation.navigate('Game')}>
         <Text style={styles.buttonText}>Start Game</Text>
@@ -18,7 +16,6 @@ function LaunchScreen({navigation}) {
     </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -43,12 +40,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 16,
     paddingVertical: 8,
-    marginTop: 12
+    marginTop: 12,
   },
   buttonText: {
     fontSize: 16,
     color: 'white',
-  }
+  },
 });
 
 export default LaunchScreen;
